@@ -28,7 +28,7 @@ Das Format der Uhr ist HH:MM. Zusätzlich werden 2 LEDs für den Doppelpunkt ang
 - 22.12.2024 - Schieberegister Ansteuerung getestet
 - 23.12.2024 - Digitalröhren Anstuerung getestet
 - 28.12.2024 - Softwarecode geschrieben
-- 30.12.2024 - Softwarecode verständliche kommentiert
+- 30.12.2024 - Softwarecode verständlich kommentiert
 - 01.01.2024 - Tests abgeschlossen
 - 04.01.2025 - Projektabschluss (Video, Dokumentation, Präsentation)
 
