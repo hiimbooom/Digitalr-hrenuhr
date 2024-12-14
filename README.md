@@ -1,9 +1,9 @@
 # Digitalröhrenuhr
-Mein Projekt ist es eine Uhr zu designen. 4 Digitalroehren werden als Einzeigeelement eingebaut.
-Die Ansteuerung der Roehren fungiert über Schieberegister.
+Mein Projekt ist es eine Uhr zu designen. 4 Digitalröhren werden als Einzeigeelement eingebaut.
+Die Ansteuerung der Röhren fungiert über Schieberegister.
 Für die Daten der Uhrzeit wird ein Timermodul DS3231 eingebaut.
-Der Arduino regelt die Kommunikation des Timeermoduls und verarbeitet diese Daten und steuert mehrere Schieberegister an, welche so die Anzeige regulieren.
-Das Format der Uhr ist HH:MM. Zusätzlich werden 2 LEDs für den Doppelpunkt angesteuert. Diese können für die Anschaulichkeit durch RGB LED's erweitert werden.
+Der Arduino regelt die Kommunikation des Timermoduls und verarbeitet diese Daten und steuert mehrere Schieberegister an, welche so die Anzeige regulieren.
+Das Format der Uhr ist HH:MM. Zusätzlich werden 2 LEDs für den Doppelpunkt angesteuert. Diese können für die Anschaulichkeit durch RGB LEDs erweitert werden.
 
 ![Anzeigeelement](./Anzeigeelement.png)
 
