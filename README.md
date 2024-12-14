@@ -5,7 +5,7 @@ Für die Daten der Uhrzeit wird ein Timermodul DS3231 eingebaut.
 Der Arduino regelt die Kommunikation des Timeermoduls und verarbeitet diese Daten und steuert mehrere Schieberegister an, welche so die Anzeige regulieren.
 Das Format der Uhr ist HH:MM. Zusätzlich werden 2 LEDs für den Doppelpunkt angesteuert. Diese können für die Anschaulichkeit durch RGB LED's erweitert werden.
 
-![Anzeigeelement](./Digitalröhre.png)
+![Anzeigeelement](./Anzeigeelement.png)
 
 ## Anforderungen
 | Anforderung                                                                                                                         | Muss | Wunsch |
