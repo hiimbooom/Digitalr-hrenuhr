@@ -41,7 +41,7 @@ diese Daten auf ein Schieberegister, damit die entsprechenden Zahlen angezeigt w
 ![Flussdiagramm](./Flussdiagramm.png)
 
 ## Projektbeschreibung
-tbd
+TBD
 - Welche Teilfunktionen habt ihr einzeln getestet?
 - Gab es dabei Probleme, wenn ja welche?
 - Konnten alle Muss-Anforderungen umgesetzt werden?
@@ -50,7 +50,7 @@ tbd
   
 ## Tests
 Kurze Beschreibung der Vorgehensweise
-tbd
+TBD
 - Was sind die Testscenarios?
 - Beschreibung oder Bild das Testziel aufzeigt
 - Gibt es spezielle Gründe warum diese Tests gewählt wurden?
