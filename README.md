@@ -12,8 +12,8 @@ Das Format der Uhr ist HH:MM. Zusätzlich werden 2 LEDs für den Doppelpunkt ang
 | -------------------------------------------------------------------------------------------------------------------                 | ---- | ------ |
 | Der Arduino kommuniziert per I2C mit dem Timermodul DS3231                                                                          | X    |        |
 | Ansteuerung Anzeigeelemente. Arduino verarbeitet Daten für Stunden und Minuten und schreibt diese auf Schieberegister               | X    |        |
-| Uhrzeit wird durch den batteriebetriebenen Timerbaustein gemerkt und läuft korrekt weiter auch wenn die Uhr nicht angeschlossen ist  | X    |        |
-| LEDs für den Doppelpunkt können konstant leuchten oder im Sekundentakt blicken                                                      | X    |        |
+| Uhrzeit wird durch den batteriebetriebenen Timerbaustein gemerkt und läuft korrekt weiter auch wenn die Uhr nicht angeschlossen ist | X    |        |
+| LEDs für den Doppelpunkt können konstant leuchten oder im Sekundentakt blinken                                                      | X    |        |
 | LEDs werden durch RGB LEDs erweitert                                                                                                |      | X      |
 | Anschauchlichkeit. Bei einer vollständigen Stunde laufen die Zahlen bei allen Anzeigeelementen von 0 bis 9 mehrmals schnell durch   |      | X      |                                                       
 
