@@ -40,7 +40,7 @@ diese Daten auf ein Schieberegister, damit die entsprechenden Zahlen angezeigt w
 
 ![Flussdiagramm](./Flussdiagramm.png)
 
-## Projektbeschreibung TBD
+## Projektbeschreibung TBD...
 
 - Welche Teilfunktionen habt ihr einzeln getestet?
 - Gab es dabei Probleme, wenn ja welche?
@@ -48,7 +48,7 @@ diese Daten auf ein Schieberegister, damit die entsprechenden Zahlen angezeigt w
 - Nein, warum konnten nicht alle umgesetzt werden?
 - War etwas unerwartet beim Schreiben des Programcodes?
   
-## Tests TBD
+## Tests TBD...
 
 Kurze Beschreibung der Vorgehensweise
 - Was sind die Testscenarios?
