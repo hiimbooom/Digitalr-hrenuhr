@@ -94,7 +94,7 @@ Nicht alle bestellten Teile wurden für das Projekt genutzt; einige wurden auf V
 ![Aufbau Steckbrett](./Steckbrett.jpeg)
 
 - **Skizzen:**
-  - Alles Wichtige habe ich in meinem Notizbuch notiert. Das Wichtigste war die Übersetzungsmatrix von Dezimal zu Hexadezimal. Genauers erkläre ich im Video.
+  - Alles Wichtige habe ich in meinem Notizbuch notiert. Das Wichtigste war die Übersetzungsmatrix von Dezimal zu Hexadezimal. Genaueres erkläre ich im Video.
     ![Notizen](./DeztoHex.jpeg)
     ![Notizen](./Segmente.jpeg)
 
