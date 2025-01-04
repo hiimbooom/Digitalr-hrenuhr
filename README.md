@@ -42,68 +42,74 @@ diese Daten auf ein Schieberegister, damit die entsprechenden Zahlen angezeigt w
 
 ## Projektbeschreibung
 
-- Welche Teilfunktionen habt ihr einzeln getestet?
-  Einzeln getestet habe ich die Kommunikation zwischen Arduino, Schieberegister und Transistoren-IC
-  Kommunikation zwischen Adafruit DS3231 Timermodul und Arduino
-  Ausserdem habe ich die Spannungen von den jeweiligen Modulen einzeln überprüft. Da diese schon Endprodukte waren, musste ich nur die gewünschten Spannungen über das Potentiometer einstellen
-  Versuchsaufbauten Transistorenansteuerung
-- Gab es dabei Probleme, wenn ja welche?
-  Ja es gab ein paar Probleme am Anfang. Da diese IV-3A aus Russland kommen und es kein gescheites Datenblatt gab. Habe ich im Internet auf diversen Foren nach Informationen gesucht. Ich stosse auf eine Seite,
-  die  vieles gut erklärte. https://zw-ix.nl/blog/tag/iv3-a-datasheet/
-  Dieser Blog gab mir eine gute Idee. Das russische Datenblatt mit Google Translate übersetzen. Was ich schliesslich dann auch gemacht habe.
-  Datenblatt auf Russisch: https://zw-ix.nl/wp-content/uploads/2019/08/IV-6.pdf
-  Übersetzungen:
-  ![Datenblatt Seite 1](./iv-3as1translated.jpg)
-  ![Datenblatt Seite 2](./iv-3as2translated.jpg)
-  Jedoch führten mich gewisse Information dieses Blogs auch in die Irre. Da genaue Angaben für Ströme und Spannungen angegeben wurde, dachte ich das dies wichtig wäre und ich habe bereits als Vorbereitung gewisse Berechnungen durchgeführt.
-  ![Berechnungen](./Document.rtf)
-  Nach weiterem rumstöberen und Sammlung von Inforamtionen, fand ich heraus, dass ich den Strom usw. gar nicht begrenzen muss. Diese Berechnungen waren redundant.
+### Teilfunktionen
+- **Getestete Teilfunktionen:**
+  - Kommunikation zwischen Arduino, Schieberegister und Transistor-ICs
+  - Kommunikation zwischen Adafruit DS3231 Timermodul und Arduino
+  - Spannungsprüfung der Module
+  - Versuchsaufbauten für Transistoransteuerung
 
-## Entscheidung Komponenten
+### Herausforderungen
+- Anfangsprobleme:
+  - Die IV-3A-Röhren aus Russland verfügten über kein brauchbares Datenblatt. Mithilfe diverser Foren und Google Translate konnte ein russisches Datenblatt übersetzt werden:
+    - [Datenblatt auf Russisch](https://zw-ix.nl/wp-content/uploads/2019/08/IV-6.pdf)
+    - Blog mit hilfreichen Informationen: [ZW-IX Blog](https://zw-ix.nl/blog/tag/iv3-a-datasheet/)
 
-  Durch ein Video auf YouTube, fand ich einen perfekten IC für die Ansteuerung der Röhren. Nämlich der TBD62783APG. https://www.youtube.com/watch?v=QSLgrnq4o88
-  Da ich in meiner Vergangenheit schon einmal mit Shiftregistern und einer Realtimeclock zutun hatte, fiel mir da die Entscheidung leicht.
-  Ich entschied mich für das Schiftregister 74HC595 und das Realtimeclockmodul von Adafruit DS3231.
-  Für die diversen Spannungen die ich brauch gab es auch eine simple Lösung. Benötigte Spannungen. 5V, circa 1V, und +20V.
-  Die 5V nahm ich von einem Modul, was durch ein 12V Netzteil gespiesen wird. Diese 12V kann ich abgreifen und für mein Boost Converter verwenden, welcher mir +20V gibt. Die circa 1V machte ich mir einen simplen Spannungsregler LM317. Die 5V des Moduls habe ich      ebenfalls als Versorgungsspannung für den Arduino verwendet. VIN Pin.
-  Den Boost Converter habe ich auf Digitec bestellt und die restlichen benötigten Bauteile auf Mouser Electronics und Distrelec.
-  https://www.digitec.ch/de/s1/product/purecrea-dc-dc-15a-step-up-boost-converter-entwicklungsboard-kit-32964682?supplier=8244233
-  ![Mouser](./BestellungMouser.PNG)
-  ![Distrelec](./BestellungDistrelec.PNG)
+- **Fehlerhafte Informationen:**
+  - Anfangs wurden für Ströme und Spannungen umfangreiche Berechnungen durchgeführt, die sich als redundant herausstellten, da keine Strombegrenzung erforderlich war.
 
-  Nicht alle bestellten Sachen waren für das Projekt. Ich habe auf Vorrat noch Zusätzliches bestellt.
+### Komponentenwahl
 
-- Konnten alle Muss-Anforderungen umgesetzt werden?
-  Ja, alle Muss-Anforderungen wurden erfüllt.
-- Konnten alle Wunsch-Anforderungen umgesetzt werden?
-  Nein. Die Anforderung mit den RGB-LEDs wurde nicht umgesetzt. Grund dafür war, dass ich kein Platz mehr auf meiner Laborkarte hatte. Ebenfalls habe ich die Wunschanforderungen mit der Anschauchlichkeit ein bisschen angepasst.
-  Diese Funktion läuft nicht alle Stunde durch sondern alle volle 10 Minuten.
-  
+Durch ein YouTube-Video entdeckte ich den **TBD62783APG**, einen perfekten IC für die Ansteuerung der Röhren ([Video-Link](https://www.youtube.com/watch?v=QSLgrnq4o88)).
+
+- **Entschiedene Komponenten:**
+  - **Schieberegister:** 74HC595
+  - **Realtime-Clock-Modul:** Adafruit DS3231
+  - **Spannungsversorgung:**
+    - 5V: Modul mit 12V-Netzteil
+    - 20V: Boost Converter ([Digitec](https://www.digitec.ch/de/s1/product/purecrea-dc-dc-15a-step-up-boost-converter-entwicklungsboard-kit-32964682?supplier=8244233))
+    - 1V: Spannungsregler LM317
+
+- **Bestellungen:**
+  - [Mouser](./BestellungMouser.PNG)
+  - [Distrelec](./BestellungDistrelec.PNG)
+
+Nicht alle bestellten Teile wurden für das Projekt genutzt; einige wurden auf Vorrat bestellt.
+
+### Anforderungen
+- **Muss-Anforderungen:** Alle wurden erfüllt.
+- **Wunsch-Anforderungen:** Nicht alle umgesetzt:
+  - RGB-LEDs: Kein Platz mehr auf der Laborkarte.
+  - Anschaulichkeitsfunktion angepasst: Funktion läuft nun alle 10 Minuten anstatt stündlich.
+
 ## Tests
 
-Als aller Erstes um mich mit den Bauteilen usw. vertraut zumachen, habe ich auf dem Steckbrett ein paar Sachen getestet wie zB. Shiftregister, Spannungsschaltungen, DS3231 Kommunikation mit Arduino und Transistoren-IC.
+- **Testaufbauten:**
+  - Steckbrett-Tests zur Vertrautheit mit den Bauteilen:
+    - Schieberegister
+    - Spannungsschaltungen
+    - DS3231-Kommunikation mit Arduino
+    - Transistor-ICs
+  
 ![Aufbau Steckbrett](./Steckbrett.jpeg)
-- Was sind die Testscenarios?
-  -Spannungen mit Multimeter überprüfen 5V, 1V, 20V
-![Test 5V](./5VSpannung.jpeg)
-![Test +20V](./1VSpannung.jpeg)
-![Test 1V](./+20VSpannung.jpeg)
-  -I2C-Kommunikation korrekt und Uhrzeit korrekt wenn DS3231-Modul entfernt
-![I2C-Verbindung](./I2CVerbindungRTCArduino.jpeg)
-  siehe mehr im Video
-  -Anschauchlichkeitsfunktion überprüfen
-  siehe Video
+
+- **Testszenarien:**
+  - Spannungsprüfung (5V, 1V, 20V):
+    ![Test 5V](./5VSpannung.jpeg)
+    ![Test +20V](./+20VSpannung.jpeg)
+    ![Test 1V](./1VSpannung.jpeg)
+  - I2C-Kommunikation überprüft und Uhrzeit korrekt bei Entfernen des DS3231:
+    ![I2C-Verbindung](./I2CVerbindungRTCArduino.jpeg)
+  - Anschaulichkeitsfunktion getestet (siehe Video).
 
 ## Werkstatt
-Ich habe dieses Projekt auf einer Laborkarte umgesetzt. Mithilfe von Litzen die Verbindungen getätigt.
+
+Das Projekt wurde auf einer Laborkarte umgesetzt. Die Verbindungen wurden mithilfe von Litzen gelötet.
+
 ![Löten IV-3A Röhre auf Verbindungsprint](./Werkstatt1.jpeg)
-![Löten IV-3A Röhre auf Verbindungsprint](./IV-3AVerbindungsprint.jpeg)
-Diese Verbindungsprints, habe ich von einem älteren Projekt noch übrig gehabt.
-
+![IV-3A Verbindungsprint](./IV-3AVerbindungsprint.jpeg)
 ![Arbeitsplatz](./Werkstatt2.jpeg)
-
 ![Unterseite Laborkarte](./Werkstatt3.jpg)
-
 
 ## Endprodukt
 
