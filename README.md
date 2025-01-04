@@ -42,6 +42,8 @@ diese Daten auf ein Schieberegister, damit die entsprechenden Zahlen angezeigt w
 
 ## Projektbeschreibung
 
+Im Video wird alles deutlicher erklärt. Schauen Sie dies zuerst an.
+
 ### Teilfunktionen
 - **Getestete Teilfunktionen:**
   - Kommunikation zwischen Arduino, Schieberegister und Transistor-ICs
