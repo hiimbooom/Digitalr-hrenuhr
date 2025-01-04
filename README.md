@@ -71,14 +71,28 @@ diese Daten auf ein Schieberegister, damit die entsprechenden Zahlen angezeigt w
   ![Mouser](./BestellungMouser.PNG)
   ![Distrelec](./BestellungDistrelec.PNG)
 
-- Konnten alle Muss-Anforderungen umgesetzt werden?
-  Ja, alle muss-Anforderungen
-- Nein, warum konnten nicht alle umgesetzt werden?
-- War etwas unerwartet beim Schreiben des Programcodes?
-  
-## Tests TBD...
+  Nicht alle bestellten Sachen waren für das Projekt. Ich habe auf Vorrat noch Zusätzliches bestellt.
 
-Kurze Beschreibung der Vorgehensweise
+- Konnten alle Muss-Anforderungen umgesetzt werden?
+  Ja, alle Muss-Anforderungen wurden erfüllt.
+- Konnten alle Wunsch-Anforderungen umgesetzt werden?
+  Nein. Die Anforderung mit den RGB-LEDs wurde nicht umgesetzt. Grund dafür war, dass ich kein Platz mehr auf meiner Laborkarte hatte. Ebenfalls habe ich die Wunschanforderungen mit der Anschauchlichkeit ein bisschen angepasst.
+  Diese Funktion läuft nicht alle Stunde durch sondern alle volle 10 Minuten.
+  
+## Tests
+
+Als aller Erstes um mich mit den Bauteilen usw. vertraut zumachen, habe ich auf dem Steckbrett ein paar Sachen getestet wie zB. Shiftregister, Spannungsschaltungen, DS3231 Kommunikation mit Arduino und Transistoren-IC.
+![Aufbau Steckbrett](./Steckbrett.jpeg)
 - Was sind die Testscenarios?
-- Beschreibung oder Bild das Testziel aufzeigt
-- Gibt es spezielle Gründe warum diese Tests gewählt wurden?
+  -Spannungen mit Multimeter überprüfen 5V, 1V, 20V
+![Test 5V](./5VSpannung.jpeg)
+![Test +20V](./1VSpannung.jpeg)
+![Test 1V](./+20VSpannung.jpeg)
+  -I2C-Kommunikation korrekt und Uhrzeit korrekt wenn DS3231-Modul entfernt
+  siehe Video
+  -Anschauchlichkeitsfunktion überprüfen
+  siehe Video
+
+## Werkstatt
+Ich habe dieses Projekt auf einer Laborkarte umgesetzt. Mithilfe von Litzen die Verbindungen getätigt.
+  
