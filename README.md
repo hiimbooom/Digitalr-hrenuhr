@@ -97,6 +97,7 @@ Als aller Erstes um mich mit den Bauteilen usw. vertraut zumachen, habe ich auf 
 ## Werkstatt
 Ich habe dieses Projekt auf einer Laborkarte umgesetzt. Mithilfe von Litzen die Verbindungen getätigt.
 ![Löten IV-3A Röhre auf Verbindungsprint](./Werkstatt1.jpeg)
+![Löten IV-3A Röhre auf Verbindungsprint](./IV-3AVerbindungsprint.jpeg)
 Diese Verbindungsprints, habe ich von einem älteren Projekt noch übrig gehabt.
 
 ![Arbeitsplatz](./Werkstatt2.jpeg)
