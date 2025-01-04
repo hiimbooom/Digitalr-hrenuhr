@@ -61,12 +61,15 @@ diese Daten auf ein Schieberegister, damit die entsprechenden Zahlen angezeigt w
 
 ## Entscheidung Komponenten
 
-  -Durch ein Video auf YouTube, fand ich einen perfekten IC für die Ansteuerung der Röhren. Nämlich der TBD62783APG. https://www.youtube.com/watch?v=QSLgrnq4o88
-  -Da ich in meiner Vergangenheit schon einmal mit Shiftregistern und einer Realtimeclock zutun hatte, fiel mir da die Entscheidung leicht.
-  -Ich entschied mich für das Schiftregister 74HC595 und das Realtimeclockmodul von Adafruit DS3231.
-  -Für die diversen Spannungen die ich brauch gab es auch eine simple Lösung. Benötigte Spannungen. 5V, circa 1V, und +20V.
-  -Die 5V nahm ich von einem Modul, was durch ein 12V Netzteil gespiesen wird. Diese 12V kann ich abgreifen und für mein Boost Converter verwenden, welcher mir +20V gibt. Die circa 1V machte ich mir einen simplen Spannungsregler LM317. Die 5V des Moduls habe ich      ebenfalls als Versorgungsspannung für den Arduino verwendet. VIN Pin.
-  -Den Boost Converter habe ich auf Digitec bestellt und die restlichen benötigten Bauteile auf Mouser Electronics und Distrelec.
+  Durch ein Video auf YouTube, fand ich einen perfekten IC für die Ansteuerung der Röhren. Nämlich der TBD62783APG. https://www.youtube.com/watch?v=QSLgrnq4o88
+  Da ich in meiner Vergangenheit schon einmal mit Shiftregistern und einer Realtimeclock zutun hatte, fiel mir da die Entscheidung leicht.
+  Ich entschied mich für das Schiftregister 74HC595 und das Realtimeclockmodul von Adafruit DS3231.
+  Für die diversen Spannungen die ich brauch gab es auch eine simple Lösung. Benötigte Spannungen. 5V, circa 1V, und +20V.
+  Die 5V nahm ich von einem Modul, was durch ein 12V Netzteil gespiesen wird. Diese 12V kann ich abgreifen und für mein Boost Converter verwenden, welcher mir +20V gibt. Die circa 1V machte ich mir einen simplen Spannungsregler LM317. Die 5V des Moduls habe ich      ebenfalls als Versorgungsspannung für den Arduino verwendet. VIN Pin.
+  Den Boost Converter habe ich auf Digitec bestellt und die restlichen benötigten Bauteile auf Mouser Electronics und Distrelec.
+  https://www.digitec.ch/de/s1/product/purecrea-dc-dc-15a-step-up-boost-converter-entwicklungsboard-kit-32964682?supplier=8244233
+  ![Mouser](./BestellungMouser.PNG)
+  ![Distrelec](./BestellungDistrelec.PNG)
 
 - Konnten alle Muss-Anforderungen umgesetzt werden?
   Ja, alle muss-Anforderungen
