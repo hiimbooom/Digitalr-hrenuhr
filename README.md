@@ -40,10 +40,16 @@ diese Daten auf ein Schieberegister, damit die entsprechenden Zahlen angezeigt w
 
 ![Flussdiagramm](./Flussdiagramm.png)
 
-## Projektbeschreibung TBD...
+## Projektbeschreibung
 
 - Welche Teilfunktionen habt ihr einzeln getestet?
+  -Einzeln getestet habe ich die Kommunikation zwischen Arduino, Schieberegister und Transistoren-IC
+  -Kommunikation zwischen Adafruit DS3231 Timermodul und Arduino
+  -Ausserdem habe ich die Spannungen von den jeweiligen Modulen einzeln überprüft. Da diese schon Endprodukte waren, musste ich nur die gewünschten Spannungen über das Potentiometer einstellen
+  -Versuchsaufbauten Transistorenansteuerung
 - Gab es dabei Probleme, wenn ja welche?
+  -Ja es gab ein paar Probleme am Anfang. Da diese IV-3A aus Russland kommen und es kein gescheites Datenblatt gab. Habe ich im Internet auf diversen Foren nach Informationen gesucht. Ich stosse auf eine Seite,
+  die  vieles gut erklärte. https://zw-ix.nl/blog/tag/iv3-a-datasheet/
 - Konnten alle Muss-Anforderungen umgesetzt werden?
 - Nein, warum konnten nicht alle umgesetzt werden?
 - War etwas unerwartet beim Schreiben des Programcodes?
