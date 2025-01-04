@@ -93,8 +93,13 @@ Nicht alle bestellten Teile wurden für das Projekt genutzt; einige wurden auf V
   
 ![Aufbau Steckbrett](./Steckbrett.jpeg)
 
+- **Skizzen:**
+  - Alles Wichtige habe ich in meinen Notizbuch notiert. Das Wichtigste war die Übersetzungsmatrix von Dezimal zu Hexadezimal. Genauers erkläre ich im Video.
+    ![Notizen](./DeztoHex.jpeg)
+    ![Notizen](./Segmente.jpeg)
+
 - **Testszenarien:**
-  - Spannungsprüfung (5V, 1V, 20V):
+  - Spannungsprüfung (5V, +20V, 1V):
     ![Test 5V](./5VSpannung.jpeg)
     ![Test +20V](./+20VSpannung.jpeg)
     ![Test 1V](./1VSpannung.jpeg)
