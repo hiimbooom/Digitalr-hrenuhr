@@ -89,10 +89,23 @@ Als aller Erstes um mich mit den Bauteilen usw. vertraut zumachen, habe ich auf 
 ![Test +20V](./1VSpannung.jpeg)
 ![Test 1V](./+20VSpannung.jpeg)
   -I2C-Kommunikation korrekt und Uhrzeit korrekt wenn DS3231-Modul entfernt
-  siehe Video
+![I2C-Verbindung](./I2CVerbindungRTCArduino.jpeg)
+  siehe mehr im Video
   -Anschauchlichkeitsfunktion überprüfen
   siehe Video
 
 ## Werkstatt
 Ich habe dieses Projekt auf einer Laborkarte umgesetzt. Mithilfe von Litzen die Verbindungen getätigt.
+![Löten IV-3A Röhre auf Verbindungsprint](./Werkstatt1.jpeg)
+Diese Verbindungsprints, habe ich von einem älteren Projekt noch übrig gehabt.
+
+![Arbeitsplatz](./Werkstatt2.jpeg)
+
+![Unterseite Laborkarte](./Werkstatt3.jpg)
+
+
+## Endprodukt
+
+![Ansicht 1](./Endprodukt1.jpeg)
+![Ansicht 2](./Endprodukt2.jpeg)
   
